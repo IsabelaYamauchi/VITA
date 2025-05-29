@@ -1,0 +1,58 @@
+/* CORES
+#0B0E3B
+#5258A9 
+#D7DDE9
+#F2A129
+*/
+/* Fonte
+font-family: "Noto Sans", sans-serif;
+font-weight: <weight>;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.divHeader {
+    padding: 20px;
+}
+
+.header {
+    background-color:#5258A9;
+    height: 68px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: #D7DDE9;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  padding-right: 20px;
+}
+.navAtivo {
+    text-decoration: underline;
+}
+
+ul {
+  display: flex;
+  gap: 15px; 
+  justify-content: center; 
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  color: #353E62;
+}
+
+.logoHeader {
+    height:56px;
+    padding-left: 10px;
+}
