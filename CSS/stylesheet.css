@@ -14,6 +14,10 @@ font-weight: <weight>;
     box-sizing: border-box;
   }
 
+body {
+    height: 100vh;
+    position: relative;
+}
 
 .divHeader {
     padding: 20px;
@@ -56,3 +60,50 @@ li {
     height:56px;
     padding-left: 10px;
 }
+
+
+footer {
+    background-color: #5258A9;
+    display: flex;
+    gap: 20px;
+    height: 192px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.integrantesFooter{
+    padding-left: 94px;
+    padding-top: 40px;
+    font-family: "Noto Sans", sans-serif; 
+}
+
+.integrantes {
+  color: #D7DDE9;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.nomeFooter {
+  color: #D7DDE9;
+  font-size: 13px;
+}
+
+.projetoFooter {
+    padding-left: 94px;
+    padding-top: 40px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.projeto{
+  color: #D7DDE9;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.textoFooter {
+  padding-top: 5px;
+  color: #D7DDE9;
+  font-size: 13px;
+}
+
