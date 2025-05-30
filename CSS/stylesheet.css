@@ -19,14 +19,14 @@ main {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;    
   margin: 0;
 }
 
 .divHeader {
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
@@ -38,7 +38,8 @@ body {
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    position: fixed;
+    position: relative;
+    z-index: 100;
     
 }
 
@@ -73,20 +74,33 @@ li {
     padding-left: 10px;
 }
 
+.coluna {
+  display: flex;
+  flex-direction: column;
+}
+
 .blocoInicial {
     font-family: "Noto Sans", sans-serif;
     width: 100%;
+    max-width: 1440px; 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 20px;
-    position: relative;
+    justify-content: space-around;
+    margin: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    
 }
 
 .blocoTexto {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
     width: 520px;
     color: #0B0E3B;
-    padding-left: 10%;
+    margin-top: 10%;
+    margin-right: 30%;
+    z-index: 20;
 }
 
 h1 {
@@ -119,48 +133,111 @@ h1 {
     text-decoration: none;
     margin-top: 25px;
     
+    
 }
 
 .blocoImagem {
-  position: relative;
-  width: 55%;
+  
   display: flex;
+  justify-content: center;
   align-items: center;
+ 
+  
 }
 
 .grupoPessoasImg {
     z-index: 2;
-    height: 566px ;
+    height: 378px ;
     border-radius: 15px 100px 15px 100px;
     object-fit: cover;
+    z-index: 2;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 20%;
 }   
 
 .formaLilas {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    background-color: #D7DDE9;
-    border-radius: 0 0 0 200px;
-    width: 867px;
-    height: 757px;
+  position: absolute;
+  background-color: #D7DDE9;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 757px;
+  border-radius: 0px 0px 0px 200px;
+  
+}
 
-    right: 0;
-    z-index: 1;
-    
+.conhecaServicos {
+  background-color: #F2A129;
+  width: 729px;
+  height: 87px;
+  color: #0B0E3B;
+  font-family: "Noto Sans", sans-serif; 
+  font-size: 45px;
+  font-weight: 700;
+  border-radius: 0px 25px 25px 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 98px;
+  margin-top: 300px;
+  margin-bottom: 65px;
+
+}
+
+.canalApoio {
+  position: relative;
+  z-index: 1;
+}
+
+.canalApoioSection {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tituloServico {
+  position: absolute;
+  color: #0B0E3B;
+  font-family: "Noto Sans", sans-serif; 
+  font-size: 48px;
+  font-weight: 900;
+  width: auto;
+  z-index: 21;
+  margin-top: 62px;
+  margin-left: 32px;
+}
+
+.textoServico {
+  position: absolute;
+  width: 596px;
+  color: #0B0E3B;
+  font-family: "Noto Sans", sans-serif; 
+  font-size: 24px;
+  font-weight: 500;
+  width: 615px;
+  z-index: 21;
+  margin-top: 132px;
+  margin-left: 32px;
+}
+
+.canalApoioSection {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
 }
 
 
-
-
-
 footer {
-  background-color: #5258A9;
-  display: flex;
-  gap: 20px;
-  height: 192px;
-  width: 100%;
-  margin-top: auto;
+    background-color: #5258A9;
+    display: flex;
+    gap: 20px;
+    height: 192px;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+    bottom: 0;
+  
 }
 
 .integrantesFooter{
