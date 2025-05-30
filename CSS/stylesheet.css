@@ -132,8 +132,6 @@ h1 {
     font-weight: 500;
     text-decoration: none;
     margin-top: 25px;
-    
-    
 }
 
 .blocoImagem {
@@ -185,48 +183,17 @@ h1 {
 
 }
 
-.canalApoio {
-  position: relative;
-  z-index: 1;
-}
 
-.canalApoioSection {
-  position: absolute;
-  display: flex;
-  justify-content: flex-start;
-}
 
-.tituloServico {
-  position: absolute;
-  color: #0B0E3B;
-  font-family: "Noto Sans", sans-serif; 
-  font-size: 48px;
-  font-weight: 900;
-  width: auto;
-  z-index: 21;
-  margin-top: 62px;
-  margin-left: 32px;
-}
 
-.textoServico {
-  position: absolute;
-  width: 596px;
-  color: #0B0E3B;
-  font-family: "Noto Sans", sans-serif; 
-  font-size: 24px;
-  font-weight: 500;
-  width: 615px;
-  z-index: 21;
-  margin-top: 132px;
-  margin-left: 32px;
+.blog {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-.canalApoioSection {
-  position: absolute;
-  display: flex;
-  justify-content: flex-start;
-}
-
 
 footer {
     background-color: #5258A9;
