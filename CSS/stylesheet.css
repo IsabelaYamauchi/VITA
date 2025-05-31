@@ -183,7 +183,27 @@ h1 {
 
 }
 
+.servicoEsq{
+  position: relative;
+}
 
+.imgEsq {
+  position: absolute
+}
+
+h2{
+  position: absolute;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  margin-top: 50px;
+}
+
+.texto{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
 
 
 .blog {
