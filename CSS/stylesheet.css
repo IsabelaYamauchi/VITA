@@ -43,7 +43,21 @@ body {
     align-items: center;
     text-decoration: none;
     z-index: 100;
+    transition: height 0.5s ease, padding 0.5s ease, width 0.5s ease;
     
+}
+
+.header.shrink {
+  height: 42px;
+  width: 740px;
+}
+
+.header.shrink .logoHeader {
+  height: 35px;
+}
+
+.header.shrink a {
+  font-size: 16px;
 }
 
 
@@ -54,6 +68,7 @@ a {
   font-size: 20px;
   padding-right: 20px;
   text-decoration: none;
+  transition: font-size 0.5s ease;
 }
 
 .navAtivo {
@@ -75,6 +90,7 @@ li {
 .logoHeader {
     height:56px;
     padding-left: 10px;
+    transition: font-size 0.3s ease;
 }
 
 .coluna {
