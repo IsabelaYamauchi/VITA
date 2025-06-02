@@ -30,6 +30,10 @@ body {
 }
 
 .header {
+    position: fixed;       
+    top: 2%;              
+    left: 50%;                 
+    transform: translateX(-50%);
     background-color:#5258A9;
     height: 68px;
     width: 1108px;
@@ -38,7 +42,6 @@ body {
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    position: relative;
     z-index: 100;
     
 }
@@ -185,10 +188,15 @@ h1 {
 
 .servicoEsq{
   position: relative;
+  padding: 500px 0px 500px 0px;
 }
 
 .imgEsq {
   position: absolute
+}
+.servicoAlerta{
+  position: relative;
+  padding: 150px 0px 500px 0px;
 }
 
 h2{
@@ -197,12 +205,18 @@ h2{
   font-weight: 900;
   font-size: 48px;
   margin-top: 50px;
+  margin-left: 20px;
 }
 
 .texto{
+  position: absolute;
+  width: 615px;
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 24px;
+  margin-top: 120px;
+  margin-left: 20px;
+
 }
 
 
@@ -212,8 +226,34 @@ h2{
   height: auto;
   margin-left: auto;
   margin-top: 50px;
-  margin-bottom: 50px;
 }
+
+.atencao {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+
+}
+.atencaoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2A129;
+  width: 1249px;
+  height: 104px;
+  border-radius: 15px;
+
+}
+
+.atencaoP {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 1216px;
+  margin: 5px;
+}
+
 
 footer {
     background-color: #5258A9;
