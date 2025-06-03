@@ -197,14 +197,14 @@ h1 {
   display: flex;
   align-items: center;
   padding-left: 98px;
-  margin-top: 300px;
+  margin-top: 350px;
   margin-bottom: 65px;
 
 }
 
 .servicoEsq{
   position: relative;
-  padding: 500px 0px 500px 0px;
+  padding: 100px 0px 500px 0px;
 }
 
 .imgEsq {
@@ -215,7 +215,7 @@ h1 {
   padding: 150px 0px 500px 0px;
 }
 
-h2{
+.tituloServico{
   position: absolute;
   font-family: "Noto Sans", sans-serif;
   font-weight: 900;

@@ -1,0 +1,168 @@
+/* CORES
+#0B0E3B
+#5258A9 
+#D7DDE9
+#F2A129
+*/
+/* Fonte
+font-family: "Noto Sans", sans-serif;
+font-weight: <weight>;
+*/
+
+
+.bodyLogin {
+    background-color: #D7DDE9 ;
+    min-height: 100vh;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center;
+}
+
+
+.fundo {
+    margin-top: 100px;
+    background-color: #fff;
+    width: 1108px;
+   
+    border-radius: 8px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.textoLogin {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 360px;
+}
+
+.fundo h2 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color:#0B0E3B ;
+    margin-bottom: 0.5rem;
+    margin-top: -10px;
+}
+
+.fundo h3 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight:400;
+    font-size: 18px;
+    color:#0B0E3B ;
+    width: 70%;
+    margin-bottom: 1rem;
+    margin-top: 0;
+
+}
+
+.tituloRegistro {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 360px;
+    
+
+}
+
+label {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#0B0E3B ;
+    margin-bottom: 0.25rem;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+}
+
+input {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #fff;
+    border: 2px solid #F2A129;
+    border-radius: 8px;
+    height: 40px;
+    width: 360px; 
+    margin-bottom: 0.5rem;
+}
+
+
+input::placeholder {
+    font-family: "Noto Sans", sans-serif;
+    color: #5258A9;
+    padding-left: 8px;
+}
+
+.fundo button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2A129;
+    color: #fff;
+    border-radius: 8px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    border-color: #F2A129;
+    align-self: center;      
+    width: 60%;
+    height: 72px;
+    margin-top: 1rem;
+    
+}
+
+.esqueceuSenha {
+    font-family: "Noto Sans", sans-serif;
+    color: #0B0E3B;
+    font-size: 16px;
+    text-decoration: underline;
+    align-self: flex-end; 
+}
+
+.separador {
+  width: 4px;
+  background-color: #5258A9;
+  margin: 0 1rem;
+  height: 70%;
+  align-self: center;
+  border-radius: 4px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding: 20px;
+}
+
+
+.registro {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding: 20px;
+}
+
+formLogin {
+    padding-top: 20px;
+}

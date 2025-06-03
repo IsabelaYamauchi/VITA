@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VITA Login</title>
     <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <link rel="stylesheet" href="../CSS/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bodyLogin">
     <header>
         <div class="divHeader">
             <nav class="header">
@@ -23,6 +24,50 @@
             </nav>
         </div>
     </header>
+
+    <main class="centralizar">
+        <section class="fundo">
+            
+            <div class="login">
+                <div class="textoLogin">
+                    <h2>Acesse sua conta</h2>
+                    <h3>Acesse sua conta utilizando o e-mail e senha cadastrado.</h3>
+                </div>
+                <form id="formLogin">
+                    <label for="email"> Endereço de E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="seu@email.com">
+
+                    <label for="senha">Senha:</label>
+                    <input type="text" name="senha" id="senha">
+
+                    <a class="esqueceuSenha" href="esqueciSenha.html"> Esqueceu sua senha?</a>
+
+                    <button type="submit" class="botaoLogin">Entrar</button>
+                </form>
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="registro">
+                <div class="tituloRegistro">
+                    <h2>Crie sua conta</h2>
+                </div>
+                <form id="formRegistro">
+                    <label for="email">Endereço de E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="seu@email.com">
+
+                    <label for="repitaEmail">Repita seu endereço de E-mail:</label>
+                    <input type="text" name="email" id="email" placeholder="seu@email.com">
+
+                    <label for="senha">Senha:</label>
+                    <input type="text" name="senha" id="senha">
+
+                    <button type="submit">Prosseguir:</button>
+                </form>
+            </div>
+           
+        </section>
+    </main>
 
     <footer>
     <div class="integrantesFooter">
