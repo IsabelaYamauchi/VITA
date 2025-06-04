@@ -8,3 +8,74 @@
 font-family: "Noto Sans", sans-serif;
 font-weight: <weight>;
 */
+.areaContato{
+    margin-top: 4rem;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contatoTitulo {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #5258A9;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  
+
+  .contato p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #0B0E3B;
+    font-weight: 600;
+    line-height: 1.6;
+   
+  }
+
+  .formularioContato {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formularioContato label {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #0B0E3B;
+  }
+
+  .formularioContato input, .formularioContato textarea {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: 2px solid #F2A129;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .formularioContato button {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    background-color: #5258A9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .dadosContato {
+    margin-top: 2rem;
+  }
+
+  .dadosContato ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dadosContato li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
