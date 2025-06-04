@@ -124,4 +124,11 @@ setaIsabela.addEventListener("click", function(){
     setaIsabela.classList.toggle("rotated");
 });
 
-/*contato*/
+/* menu hamburguer*/
+
+const hamburguer = document.getElementById('hamburguer');
+const menu = document.querySelector('.header ul');
+
+hamburguer.addEventListener('click', function() {
+  navUl.classList.toggle('ativo');
+});

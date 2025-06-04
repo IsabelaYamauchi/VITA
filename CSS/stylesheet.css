@@ -23,6 +23,8 @@ body {
   margin: 0;
 }
 
+/*header*/
+
 .divHeader {
     padding: 20px;
     display: flex;
@@ -47,6 +49,30 @@ body {
     
 }
 
+.hamburguer {
+    width: 35px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+}
+
+.hamburguer span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #D7DDE9;
+    border-radius: 2px;
+    margin-bottom: 6px;
+    transition: 0.3s;
+}
+
+
 .header.shrink {
   height: 42px;
   width: 740px;
@@ -65,17 +91,17 @@ a {
   text-decoration: none;
   color: #D7DDE9;
   font-family: "Noto Sans", sans-serif;
-  font-size: 20px;
-  padding-right: 20px;
+  font-size: 1rem;
   text-decoration: none;
   transition: font-size 0.5s ease;
+  margin-right: 5px;
 }
 
 .navAtivo {
     text-decoration: underline;
 }
 
-ul {
+.header ul {
   display: flex;
   gap: 15px; 
   justify-content: center; 
@@ -93,6 +119,8 @@ li {
     transition: font-size 0.3s ease;
 }
 
+/*main*/
+
 .coluna {
   display: flex;
   flex-direction: column;
@@ -101,7 +129,6 @@ li {
 .blocoInicial {
     font-family: "Noto Sans", sans-serif;
     width: 100%;
-    max-width: 1440px; 
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -128,14 +155,14 @@ h1 {
 }
 
 .destaque {
-    font-size: 60px;
+    font-size: 5rem;
     font-weight: 900;
     
 }
 
 .subtitulo {
     width: 520px;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -154,12 +181,10 @@ h1 {
 }
 
 .blocoImagem {
-  
   display: flex;
   justify-content: center;
   align-items: center;
  
-  
 }
 
 .grupoPessoasImg {
@@ -179,24 +204,25 @@ h1 {
   z-index: 1;
   top: 0;
   right: 0;
-  width: 65%;
-  height: 757px;
+  width: 60%;
+  height: 65%;
   border-radius: 0px 0px 0px 200px;
   
 }
 
 .conhecaServicos {
   background-color: #F2A129;
-  width: 729px;
+  width: 40%;
   height: 87px;
   color: #0B0E3B;
   font-family: "Noto Sans", sans-serif; 
-  font-size: 45px;
+  font-size: 2.5rem;
   font-weight: 700;
   border-radius: 0px 25px 25px 0px;
   display: flex;
   align-items: center;
-  padding-left: 98px;
+  justify-content: end ;
+  padding-right: 45px;
   margin-top: 350px;
   margin-bottom: 65px;
 
@@ -208,7 +234,8 @@ h1 {
 }
 
 .imgEsq {
-  position: absolute
+  position: absolute;
+  width: 50%;
 }
 .servicoAlerta{
   position: relative;
@@ -219,9 +246,10 @@ h1 {
   position: absolute;
   font-family: "Noto Sans", sans-serif;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 2.5rem;
   margin-top: 50px;
   margin-left: 20px;
+  width: 40%;
 }
 
 .texto{
@@ -229,7 +257,7 @@ h1 {
   width: 615px;
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.2rem;
   margin-top: 120px;
   margin-left: 20px;
 
@@ -334,4 +362,68 @@ footer {
   padding-top: 5px;
   color: #D7DDE9;
   font-size: 13px;
+}
+
+/*responsividade*/
+
+@media (max-width: 900px) {
+
+body {
+  min-height: 100vh;    
+  margin: 0;
+}
+.coluna{
+ 
+}
+
+.blocoInicial {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburguer {
+    display: flex;
+  }
+
+.header ul {
+  flex-direction: column;
+  gap: 32px;
+  background: #5258A9;
+  position: fixed;
+  top: 70px;
+  right: 45%;
+  width: 10rem;
+  height: 15rem;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  border-radius:1rem;
+  
+}
+.header ul.menuAtivo {
+  transform: translateX(0);
+  }
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  min-width: 0;
+  max-width: 30%;
+  }
+.grupoPessoasImg {
+  justify-self: center;
+  height: 300px;
+}
+.conhecaServicos {
+  font-size: 2rem;
+  width: 90%;
+}
+
+.tituloServico {
+  
+}
+
 }
