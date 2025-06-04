@@ -34,6 +34,7 @@ font-weight: <weight>;
   margin: 0;
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 
 .blog-item button {
