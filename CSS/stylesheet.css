@@ -318,3 +318,20 @@ footer {
   font-size: 13px;
 }
 
+.contatoFooter {
+  padding-left: 94px;
+  padding-top: 40px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.contato {
+  color: #D7DDE9;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.textoContato {
+  padding-top: 5px;
+  color: #D7DDE9;
+  font-size: 13px;
+}
