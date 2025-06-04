@@ -44,7 +44,7 @@ font-weight: <weight>;
 .blog-pergunta {
     font-size: 1.3rem;
     font-weight: 700;
-    width: 95%;
+    width: 100%;
     color: #fff;
     background-color: #5258A9;
     display: flex;
@@ -58,8 +58,13 @@ font-weight: <weight>;
     color:#0B0E3B ;
 }
 
+.blog-pergunta.ativa .seta {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
 .blog-item h2{
-    padding: 0.5rem;
+    
     font-size: 1.4rem;
     color:#F2A129 ;
 
@@ -67,29 +72,39 @@ font-weight: <weight>;
 }
 
 .blog-item p {
-    color:#0B0E3B ;
+    color:#D7DDE9;
     font-size: 1rem;
     padding: 0.5rem;
     font-weight: 500;
 }
 
 .blog-item h3 {
-    color: #0B0E3B;
+    color: #D7DDE9;
     font-weight: 500;
 }
 
-.blog-item img {
-    height: 230px ;
-    width: auto;
-    border-radius: 33px;
+.blog-resposta img {
+    max-width: 350px;  
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 
 }
 
 .blog-resposta {
-    display: flex;
+    display: none;
     align-items: flex-start;
     gap: 1rem;
     padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.blog-resposta.exibir {
+  display: flex !important;  
+}
+
+.blog-resposta .textoBlog {
+  flex: 1;
 }
 
 .blog-item li{

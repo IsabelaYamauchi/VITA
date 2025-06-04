@@ -14,57 +14,91 @@ window.addEventListener('scroll', handleScroll);
 
 /* Formulario */
 
-const formLogin = document.getElementById("formLogin");
-const loginEmail = document.getElementById("loginEmail");
-const loginSenha = document.getElementById("loginSenha");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const formLogin = document.getElementById("formLogin");
+    const loginEmail = document.getElementById("loginEmail");
+    const loginSenha = document.getElementById("loginSenha");
 
 
 
-function showError(msg) {
-  alert(msg);
-}
+    function showError(msg) {
+    alert(msg);
+    }
 
-/* Login*/
+    /* Login*/
 
-    formLogin.addEventListener("submit", function(event) {
-        event.preventDefault();
-        
-        const emailValue = loginEmail.value.trim();
-        const senhaValue = loginSenha.value.trim();
+        formLogin.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const emailValue = loginEmail.value.trim();
+            const senhaValue = loginSenha.value.trim();
 
-        if (!emailValue || !senhaValue){
-            showError("Preencha o e-mail e senha para continuar.");
-            return;
-        }
-        
-        console.log("Login válido:", emailValue, "," , senhaValue);
+            if (!emailValue || !senhaValue){
+                showError("Preencha o e-mail e senha para continuar.");
+                return;
+            }
+            
+            console.log("Login válido:", emailValue, "," , senhaValue);
+        });
+
+
+    /* registro*/
+
+    const formRegistro = document.getElementById("formRegistro");
+    const emailRegistro = document.getElementById("emailRegistro");
+    const emailRepete = document.getElementById("emailRepete");
+    const senhaRegistro = document.getElementById("senhaRegistro");
+
+        formRegistro.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const emailRegistroValue = emailRegistro.value.trim();
+            const emailRepeteValue = emailRepete.value.trim();
+            const senhaRegistroValue = senhaRegistro.value.trim();
+
+            if (!emailRegistroValue || !emailRepeteValue || !senhaRegistroValue){
+                showError("Preencha todos os campos para prosseguir.")
+                return;
+            }
+
+            if (emailRegistroValue != emailRepeteValue){
+                showError("Os endereços de e-mail não coincidem.")
+                return;
+            }
+
+            console.log("Login válido:", emailRegistroValue, "," , senhaRegistroValue);
+
+        });
     });
 
+/* blog */
 
-/* registro*/
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM totalmente carregado - iniciando FAQ");
+    const botoes = document.querySelectorAll(".blog-pergunta");
 
-const formRegistro = document.getElementById("formRegistro");
-const emailRegistro = document.getElementById("emailRegistro");
-const emailRepete = document.getElementById("emailRepete");
-const senhaRegistro = document.getElementById("senhaRegistro");
-
-    formRegistro.addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const emailRegistroValue = emailRegistro.value.trim();
-        const emailRepeteValue = emailRepete.value.trim();
-        const senhaRegistroValue = senhaRegistro.value.trim();
-
-        if (!emailRegistroValue || !emailRepeteValue || !senhaRegistroValue){
-            showError("Preencha todos os campos para prosseguir.")
-            return;
-        }
-
-        if (emailRegistroValue != emailRepeteValue){
-            showError("Os endereços de e-mail não coincidem.")
-            return;
-        }
-
-        console.log("Login válido:", emailRegistroValue, "," , senhaRegistroValue);
-
+    botoes.forEach((botao) => {
+        botao.addEventListener("click", () => {
+            botoes.forEach((b) => {
+                if(b !== botao) {
+                    b.classList.remove("ativa");
+                    const respOutra = b.nextElementSibling;
+                    if(respOutra) {
+                        respOutra.classList.remove("exibir");
+                    }
+                }    
+        });
+        const respostas  = botao.nextElementSibling;
+        const estaAtiva =   botao.classList.toggle("ativa");
+    
+            if(respostas){
+                if(estaAtiva) {
+                    respostas.classList.add("exibir");
+                }else {
+                    respostas.classList.remove("exibir")
+                }
+            }
+        });
     });
+});
