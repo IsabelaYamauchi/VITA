@@ -102,3 +102,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+/* integrantes */
+
+/*bruna*/
+
+const setaBruna = document.querySelector (".setaBruna");
+const fundoRoxoBruna = document.querySelector(".cardBruna .fundoRoxo");
+
+setaBruna.addEventListener("click", function(){
+    fundoRoxoBruna.classList.toggle("expanded");
+    setaBruna.classList.toggle("rotated");
+});
+
+/* isabela*/
+const setaIsabela = document.querySelector (".setaIsabela");
+const fundoRoxoIsabela = document.querySelector(".cardIsabela .fundoRoxo");
+
+setaIsabela.addEventListener("click", function(){
+    fundoRoxoIsabela.classList.toggle("expanded");
+    setaIsabela.classList.toggle("rotated");
+});

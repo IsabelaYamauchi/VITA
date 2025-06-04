@@ -22,7 +22,7 @@ font-weight: <weight>;
     justify-content: center;
     flex-direction: column;
     margin-top: 10%;
-    gap: 10rem;
+    gap: 8rem;
 }
 
 .cardBruna {
@@ -30,6 +30,8 @@ font-weight: <weight>;
     width: 563px;
     height: 291px;
 }
+
+
 
 .setaBruna{
     position: absolute;
@@ -46,7 +48,12 @@ font-weight: <weight>;
     right: 16px;
     top:87px;
     z-index: 3;
+    transform: rotate(0deg);
+    transition: transform 0.4s ease;
    
+}
+.setaBruna.rotated {
+  transform: rotate(180deg);
 }
 
 .fundoRoxo {
@@ -58,7 +65,26 @@ font-weight: <weight>;
     background-color:#5258A9 ;
     border-radius: 0 29px 29px 0;
     z-index: 1;
+    display: flex;
+    align-items: center; 
 }
+
+.fundoRoxo.expanded {
+    width: 1108px;
+}
+.fundoRoxo.expanded .textoRoxo {
+    display: block;
+    margin-left: 60%;
+}
+
+.fundoRoxo .textoRoxo{
+    display: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    z-index: 5;
+}
+
 
 .imgBruna  {
     position: absolute;
@@ -105,4 +131,11 @@ font-weight: <weight>;
     right: 16px;
     top:87px;
     z-index: 3;
+    transform: rotate(0deg);
+    transition: transform 0.4s ease;
 }
+
+.setaIsabela.rotated {
+  transform: rotate(180deg);
+}
+
