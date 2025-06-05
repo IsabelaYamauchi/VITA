@@ -130,5 +130,5 @@ const hamburguer = document.getElementById('hamburguer');
 const menu = document.querySelector('.header ul');
 
 hamburguer.addEventListener('click', function() {
-  navUl.classList.toggle('ativo');
+  menu.classList.toggle('menuAtivo');
 });
