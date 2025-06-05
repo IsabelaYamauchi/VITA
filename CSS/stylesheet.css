@@ -229,7 +229,7 @@ h1 {
 
 .conhecaServicos {
   background-color: #F2A129;
-  width: 35%;
+  width: 80%;
   height: 87px;
   color: #0B0E3B;
   font-family: "Noto Sans", sans-serif; 
@@ -433,7 +433,7 @@ footer {
   color: #D7DDE9;
   font-size: 0.8rem;
 }
-
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*responsividade*/
 
 @media (max-width: 600px) {
@@ -466,7 +466,6 @@ footer {
   border-radius: 0 0 1rem 1rem;
   
 }
-
 
 #menu-toggle:checked ~ .menu {
     transform: translateX(0);
@@ -639,3 +638,6 @@ footer {
 
 }
 
+@media (min-width: 600px) {
+  
+}
