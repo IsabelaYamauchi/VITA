@@ -134,3 +134,23 @@ font-weight: <weight>;
 .textoBlog {
     width: 50%;
 }
+
+@media (max-width: 600px) {
+
+.blog-item {
+    width: 65%;
+}
+
+
+
+.blog-resposta.exibir {
+  display: flex !important;  
+  flex-direction: column;
+}
+
+.textoBlog {
+    width: 95%;
+}
+
+
+}

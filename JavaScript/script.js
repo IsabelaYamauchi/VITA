@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
 /* blog */
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM totalmente carregado - iniciando FAQ");
     const botoes = document.querySelectorAll(".blog-pergunta");
 
     botoes.forEach((botao) => {
