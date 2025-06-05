@@ -84,7 +84,9 @@ body {
 }
 
 .navAtivo {
-    text-decoration: underline;
+  background-color: #F2A129;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
 }
 
 .header .menu {
@@ -442,6 +444,10 @@ footer {
   width: 100%;       
   transform: translateX(-50%);  
   }
+
+.navAtivo {
+  text-decoration: underline;
+}
 
 .header ul {
   flex-direction: column;
