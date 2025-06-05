@@ -72,7 +72,7 @@ body {
   top: 10px;
 }
 
-a {
+.header .menu li  a {
   text-decoration: none;
   color: #D7DDE9;
   font-family: "Noto Sans", sans-serif;
@@ -87,7 +87,7 @@ a {
     text-decoration: underline;
 }
 
-.header ul {
+.header .menu {
   display: flex;
   gap: 15px; 
   justify-content: center; 
@@ -95,11 +95,7 @@ a {
   list-style: none;
 }
 
-.header ul.menuAtivo {
-  transform: translateX(0);
-  }
-
-li {
+.header .menu li {
   list-style-type: none;
   color: #353E62;
 }
@@ -108,6 +104,10 @@ li {
   height:56px;
   padding-left: 10px;
   transition: font-size 0.3s ease;
+}
+
+#menu-toggle {
+  display: none;
 }
 
 .hamburguer {
@@ -124,6 +124,7 @@ li {
 }
 
 .hamburguer span {
+  display: block;
   height: 4px;
   width: 100%;
   background: #D7DDE9;
@@ -435,6 +436,56 @@ footer {
 
 @media (max-width: 600px) {
 
+  /*header*/
+.header.shrink {
+  height: 68px;     
+  width: 100%;       
+  transform: translateX(-50%);  
+  }
+
+.header ul {
+  flex-direction: column;
+  gap: 10px;
+  background: #5258A9;
+  position: fixed;
+  top: 4vh;
+  right: 0;
+  width: 45%;
+  max-width: 250px;
+  height: auto;
+  align-items: center;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  border-radius: 0 0 1rem 1rem;
+  
+}
+
+
+#menu-toggle:checked ~ .menu {
+    transform: translateX(0);
+  }
+
+.hamburguer {
+    display: flex;
+  }
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: none;
+  padding: 0 1rem;
+  border-radius: 0;
+  }
+
+.header .menu {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  transform: translateX(100%);
+}
+
 
 body {
   min-height: 100vh;    
@@ -488,39 +539,7 @@ h1 {
   height: 70vh;
 }
 
-/*header*/
 
-.header ul {
-  flex-direction: column;
-  gap: 10px;
-  background: #5258A9;
-  position: fixed;
-  top: 50px;
-  right: 45%;
-  width: 45%;
-  max-width: 250px;
-  height: auto;
-  align-items: center;
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 1000;
-  display: flex;
-  border-radius:1rem;
-  
-}
-
-.header ul.menuAtivo {
-  transform: translateX(0);
-  }
-
-.hamburguer {
-    display: flex;
-  }
-
-.header {
-  display: flex;
-  justify-content: flex-start;
-  }
 
 /*serviços*/
 
@@ -578,8 +597,6 @@ h1 {
   margin: 1rem 0 0 0;   
   padding: 1rem;   
   }
-
-
 
 .imgBlog {
   position: static;
