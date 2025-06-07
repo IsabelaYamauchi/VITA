@@ -15,6 +15,7 @@ font-weight: <weight>;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    
 }
 
 .contatoTitulo {
@@ -23,6 +24,7 @@ font-weight: <weight>;
     color: #5258A9;
     margin-top: 4rem;
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
   }
 
   
@@ -33,18 +35,22 @@ font-weight: <weight>;
     color: #0B0E3B;
     font-weight: 600;
     line-height: 1.6;
+    transition: color 0.3s ease;
    
   }
 
   .formularioContato {
     display: flex;
     flex-direction: column;
+    
+    
   }
 
   .formularioContato label {
     margin-top: 1.5rem;
     font-weight: bold;
     color: #0B0E3B;
+  
   }
 
   .formularioContato input, .formularioContato textarea {
@@ -53,6 +59,8 @@ font-weight: <weight>;
     border: 2px solid #F2A129;
     border-radius: 8px;
     font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+   
   }
 
   .formularioContato button {
@@ -64,7 +72,7 @@ font-weight: <weight>;
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease transform 0.2s ease;;
   }
 
   .dadosContato {
@@ -114,4 +122,55 @@ font-weight: <weight>;
 
 }
 
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+.areaContato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContato, .dadosContato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContato p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85%;
+}
+
+.formularioContato label {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #0B0E3B;
+  width: 50%;
+  }
+
+.formularioContato input, .formularioContato textarea {
+    padding: 0.5rem 4rem ;
+
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+.formularioContato input, .formularioContato textarea {
+    padding: 0.5rem 4rem ;
+
+}
+}
+
+@media (min-width: 992px) and (max-width: 1299px){
+
+
+.formularioContato input, .formularioContato textarea {
+    padding: 0.5rem 4rem ;
+
+}
 }

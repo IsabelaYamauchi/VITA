@@ -67,6 +67,7 @@ font-weight: <weight>;
     z-index: 1;
     display: flex;
     align-items: center; 
+    transition: transform 0.4s ease;
 }
 
 .fundoRoxo.expanded {
@@ -177,3 +178,88 @@ font-weight: <weight>;
 
 
 }
+
+@media (min-width: 600px) and (max-width: 767px) {
+
+.setaBruna , .setaIsabela {
+     transform: rotate(90deg);
+    }
+.setaBruna.rotated, .setaIsabela.rotated {
+    transform: rotate(270deg);
+}
+
+.fundoRoxo.expanded {
+    width: 100%;
+    height: 500px;
+}
+
+.fundoRoxo.expanded .textoRoxo {
+    display: block;
+    margin-left: 10%;
+}
+
+.cardBruna, .cardIsabela {
+    display: flex;
+    justify-items: center;
+}
+
+.textoRoxo {
+    margin-top: 45%;
+    margin-left: 0;
+
+}
+
+.integrantes {
+    margin-top: 20%;
+    gap: 300px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .setaBruna , .setaIsabela {
+     transform: rotate(90deg);
+    }
+.setaBruna.rotated, .setaIsabela.rotated {
+    transform: rotate(270deg);
+}
+
+.fundoRoxo.expanded {
+    width: 100%;
+    height: 500px;
+}
+
+.fundoRoxo.expanded .textoRoxo {
+    display: block;
+    margin-left: 10%;
+    
+}
+
+.cardBruna, .cardIsabela {
+    display: flex;
+    justify-items: center;
+}
+
+.cardIsabela {
+        margin-bottom: 450px;
+}
+
+.textoRoxo {
+    margin-top: 45%;
+    margin-left: 0;
+
+}
+
+.integrantes {
+    margin-top: 20%;
+    gap: 300px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1299px){
+
+.fundoRoxo.expanded {
+    width: 1000px;
+}
+}
+

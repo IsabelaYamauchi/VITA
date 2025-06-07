@@ -37,7 +37,7 @@ body {
     left: 50%;                 
     transform: translateX(-50%);
     background-color:#5258A9;
-    height: 68px;
+    height: 5%;
     width: 60%;
     border-radius: 8px;
     display: flex;
@@ -162,6 +162,7 @@ body {
     color: #0B0E3B;
     margin-top: 10%;
     z-index: 20;
+    transition: height 0.5s ease, padding 0.5s ease, width 0.5s ease;
 }
 
 h1 {
@@ -216,12 +217,13 @@ h1 {
 .formaLilas {
   position: absolute;
   background-color: #D7DDE9;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   right: 0;
   width: 60%;
-  height: 65%;
+  height: 45%;
   border-radius: 0px 0px 0px 200px;
+  transition: height 0.5s ease, padding 0.5s ease, width 0.5s ease;
   
 }
 
@@ -229,7 +231,7 @@ h1 {
 
 .conhecaServicos {
   background-color: #F2A129;
-  width: 80%;
+  width: 70%;
   height: 87px;
   color: #0B0E3B;
   font-family: "Noto Sans", sans-serif; 
@@ -275,7 +277,7 @@ h1 {
 
 .texto{
   position: absolute;
-  width: 70%;
+  width: 65%;
   font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
@@ -306,8 +308,8 @@ h1 {
 
 .imgBlog {
   position: absolute;
-  top: 45px;
-  right:750px ;
+  top: 50px;
+  right:900px ;
   height: auto;
   margin-left: auto;
   z-index: 2;
@@ -638,6 +640,196 @@ footer {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 767px) {
   
+
+  .header {
+    width: 90%;
+  }
+
+  .header.shrink {
+    width: 85%;
+  }
+
+  
+  .grupoPessoasImg {
+  padding: 50px;
+  margin: 50px; 
+}
+
+.blocoInicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-bottom: 100%;
+  padding: 0 0 20% 0;
+  margin: 0;
+  width: 100%;
+}
+
+.blocoTexto {
+  width: 100%;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+h1 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.subtitulo {
+  width: 100%;
+
+}
+
+.grupoPessoasImg {
+  padding: 50px;
+  margin: 50px;
+  
+}
+
+.formaLilas {
+  height: 70vh;
+}
+
+/*serviços*/
+
+.conhecaServicos {
+  font-size: 2rem;
+  width: 90%;
+  margin-bottom: 50px;
+  
+}
+
+.servicoEsq {
+    display: flex;            
+    flex-direction: column;   
+    align-items: flex-start; 
+    padding: 5px 0;         
+    width: 80%;               
+    margin: 1rem auto;       
+    height: auto;           
+    position: static;
+    border-radius: 1rem;       
+  }
+
+ .tituloServico, .texto {
+    position: static;      
+    width: 85%;             
+    margin: 1rem 0 0 0;   
+    padding: 1rem;   
+  }
+
+  .servicoEsq .imgEsq {
+    position: static;       
+    width: 100%;        
+    height: auto;            
+    margin-top: 1rem;         
+    padding-left: 0;       
+  }
+
+
+  .direita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  
+    width: 80%;              
+    margin: 1rem auto;
+    padding: 5px 0;
+    height: auto;
+    position: static;
+    border-radius: 1rem;
+
+  }
+
+  .tituloDir, .textoDir{
+  position: static;      
+  width: 85%;             
+  margin: 1rem 0 0 0;   
+  padding: 1rem;   
+  }
+
+.imgBlog {
+  position: static;
+  right: 0;
+
+
+  }
+
+.atencaoDiv {
+  height: 30%;
+  width: 90%;
+}
+
+/*footer*/
+
+footer {
+  height: 100%;
+  width: 100%;
+  margin-top: 50vh;
+}
+
+.integrantesFooter, .projetoFooter {
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contatoFooter {
+  padding-left:8px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .header {
+    width: 75%;
+  }
+
+  .header.shrink {
+    width: 80%;
+  }
+
+  .conhecaServicos {
+    width: 70%;
+  }
+footer {
+  height: 100%;
+  width: 100%;
+  margin-top: 50vh;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+
+  .header {
+    width: 65%;
+  }
+
+  .header.shrink {
+    width: 60%;
+  }
+
+footer {
+  height: 100%;
+  width: 100%;
+  margin-top: 50vh;
+}
+
 }

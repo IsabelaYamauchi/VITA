@@ -64,7 +64,7 @@ font-weight: <weight>;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    width: 360px;
+    width: 100%;
     
 
 }
@@ -95,7 +95,7 @@ input {
     border: 2px solid #F2A129;
     border-radius: 8px;
     height: 40px;
-    width: 360px; 
+    width: 80%; 
     margin-bottom: 0.5rem;
 }
 
@@ -114,11 +114,11 @@ input::placeholder {
     color: #fff;
     border-radius: 8px;
     font-family: "Noto Sans", sans-serif;
-    font-size: 26px;
+    font-size: 1.5rem;
     font-weight: 500;
     border-color: #F2A129;
     align-self: center;      
-    width: 60%;
+    width: 80%;
     height: 72px;
     margin-top: 1rem;
     
@@ -136,7 +136,7 @@ input::placeholder {
   width: 4px;
   background-color: #5258A9;
   margin: 0 1rem;
-  height: 70%;
+  height: 80%;
   align-self: center;
   border-radius: 4px;
 }
@@ -148,7 +148,7 @@ form {
 }
 
 .login {
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start; 
   padding: 20px;
@@ -156,14 +156,14 @@ form {
 
 
 .registro {
-    display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start; 
   padding: 20px;
 }
 
 formLogin {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 
@@ -193,5 +193,100 @@ formLogin {
   border-radius: 4px;
 }
 
+
+}
+
+
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+.fundo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#formLogin, #formRegistro , .tituloRegistro , .textoLogin {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    
+}
+
+.login, .registro {
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.separador {
+  background-color: #5258A9;
+  margin: 1 0;
+  width: 70%;
+  height: 4px;
+  align-self: center;
+  border-radius: 4px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fundo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#formLogin, #formRegistro , .tituloRegistro , .textoLogin {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    
+}
+
+.login, .registro {
+    display: flex;
+    align-items: center;
+   
+}
+
+.separador {
+  background-color: #5258A9;
+  margin: 1 0;
+  width: 70%;
+  height: 4px;
+  align-self: center;
+  border-radius: 4px;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1299px){
+
+
+
+  .fundo {
+    width: 80%;
+  }
+
+  .login,
+  .registro {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+ 
+  #formLogin,
+  #formRegistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
 }
