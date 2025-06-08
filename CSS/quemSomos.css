@@ -1,0 +1,66 @@
+/* CORES
+#0B0E3B
+#5258A9 
+#D7DDE9
+#F2A129
+*/
+/* Fonte
+font-family: "Noto Sans", sans-serif;
+font-weight: <weight>;
+*/
+
+.quemSomos {    
+    margin-top: 5%;
+    background-color:#D7DDE9 ;
+    padding: 5% ;
+    width: 90%;
+    font-family: "Noto Sans", sans-serif;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.introQuemSomos h1 {
+    color:#0B0E3B ;
+    padding: 1rem 0;
+    font-size: 5rem;
+    
+}
+
+.introQuemSomos p {
+    color:#0B0E3B ;
+    font-size: 1.5rem;
+    width: 75%;
+    margin-bottom: 3%;
+}
+
+.box {
+    background-color: #F2A129;
+    padding: 2%;
+    border-radius: 2rem;
+    margin: 3%;
+    width: 50%;
+}
+
+.box h2 {
+    color:#0B0E3B;
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+.box p {
+    font-weight: 700;
+    color: #0B0E3B;
+}
+
+.box li {
+    color: #0B0E3B;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+ 
+.profissionaisSaude {
+    color: #0B0E3B;
+    width: 70%;
+}   
+
