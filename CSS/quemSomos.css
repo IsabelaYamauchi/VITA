@@ -64,3 +64,41 @@ font-weight: <weight>;
     width: 70%;
 }   
 
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.introQuemSomos p {
+    font-size: 1.3rem;
+
+}
+    
+.box {
+    border-radius: 1.5rem;
+    padding: 4%;
+    width: 85%;
+}
+
+.profissionaisSaude {
+    width: 90%;
+    margin-top: 5%;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1299px) {
+
+  .header {
+    width: 65%;
+  }
+
+  .header.shrink {
+    width: 60%;
+  }
+
+footer {
+  height: 100%;
+  width: 100%;
+  margin-top: 50vh;
+}
+
+}
