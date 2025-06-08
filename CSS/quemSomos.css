@@ -66,6 +66,10 @@ font-weight: <weight>;
 
 
 
+
+
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 .introQuemSomos p {
     font-size: 1.3rem;
