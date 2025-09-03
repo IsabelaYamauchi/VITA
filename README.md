@@ -1,10 +1,12 @@
 # VITA – Vigilância Integrada de Tecnologia e Apoio
 
+**👉 Experimente agora a versão online:** [isabelayamauchi.github.io/VITA](https://isabelayamauchi.github.io/VITA/index.html)
+
 ## Sobre o Projeto
 
 Vivemos em uma época marcada por eventos extremos, como chuvas intensas, ondas de calor e frio, tempestades severas, ciclones, incêndios florestais e deslizamentos de terra. Essas situações vão além dos danos materiais: impactam profundamente a saúde mental e o bem-estar das pessoas afetadas. A recuperação das estruturas físicas é importante, mas é fundamental reconstruir também os corações e a saúde emocional dessas comunidades.
 
-Pensando nisso, nasceu a **VITA** , uma plataforma digital que alia tecnologia, informação e apoio humano para oferecer um canal de suporte psicossocial em situações de desastre. Nossa proposta é conectar vítimas a psicólogos especializados, promover terapias em grupo e possibilitar a troca de experiências entre os afetados, criando uma rede de acolhimento e resiliência.
+Pensando nisso, nasceu a **VITA**, uma plataforma digital que alia tecnologia, informação e apoio humano para oferecer um canal de suporte psicossocial em situações de desastre. Nossa proposta é conectar vítimas a psicólogos especializados, promover terapias em grupo e possibilitar a troca de experiências entre os afetados, criando uma rede de acolhimento e resiliência.
 
 ## Objetivo
 
@@ -71,4 +73,5 @@ Curso: Análise e Desenvolvimento de Sistemas – FIAP – 1TDSPO
 
 ---
 
-*Agora você conhece a VITA e pode participar dessa transformação junto com a gente!*
+*Agora você conhece a VITA e pode participar dessa transformação junto com a gente!*  
+** Acesse a versão online:** [https://isabelayamauchi.github.io/VITA/index.html](https://isabelayamauchi.github.io/VITA/index.html)
